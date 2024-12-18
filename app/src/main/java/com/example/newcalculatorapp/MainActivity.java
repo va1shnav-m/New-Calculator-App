@@ -13,13 +13,14 @@ import androidx.core.view.WindowInsetsCompat;
 
 public class MainActivity extends AppCompatActivity {
 
-    Button b1;
+    Button b1,b2;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_main);
         b1=(Button) findViewById(R.id.ADD);
+        b2=(Button) findViewById(R.id.SUB);
 
         b1.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -28,6 +29,14 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(ob);
             }
         });
+        b2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent ob=new Intent(getApplicationContext(), SubActivity.class);
+                startActivity(ob);
+            }
+        });
+
 
     }
 }
