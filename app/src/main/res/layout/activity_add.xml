@@ -41,12 +41,13 @@
         android:id="@+id/ADD1"
         android:layout_margin="30dp"
         android:text="ADD"/>
-    <androidx.appcompat.widget.AppCompatButton
+    <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/BACK"
-        android:layout_margin="50dp"
-        android:text="BACK"/>
+        android:text=" "
+        android:textSize="30dp"
+        android:gravity="center"
+        android:id="@+id/resToDisplay"/>
 
 
 
